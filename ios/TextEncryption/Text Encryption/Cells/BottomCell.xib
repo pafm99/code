@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BottomCell" id="cbE-f1-gkS" customClass="BottomCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cbE-f1-gkS" id="wUX-dq-KQq">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6gG-PQ-BRK" userLabel="left">
+                        <rect key="frame" x="0.0" y="0.0" width="160" height="49"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="vYV-hf-N3o" userLabel="encrypt">
+                                <rect key="frame" x="0.0" y="0.0" width="160" height="49"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="QGZ-Lf-m6a"/>
+                                    <constraint firstAttribute="height" constant="49" id="X1I-aZ-5v5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="titleEdgeInsets" minX="-89" minY="-16" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="44" minY="0.0" maxX="84" maxY="16"/>
+                                <state key="normal" title="Encrypt" image="encrypt.png">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="vYV-hf-N3o" secondAttribute="centerY" id="C8Y-0q-2NH"/>
+                            <constraint firstAttribute="centerX" secondItem="vYV-hf-N3o" secondAttribute="centerX" id="E9C-S8-jDk"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o3a-rC-U7P" userLabel="right">
+                        <rect key="frame" x="161" y="0.0" width="160" height="49"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="wlJ-dd-0fv" userLabel="decrypt">
+                                <rect key="frame" x="0.0" y="0.0" width="160" height="49"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="2cl-g6-MHW"/>
+                                    <constraint firstAttribute="height" constant="49" id="OAM-Dj-EIx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="titleEdgeInsets" minX="-89" minY="-16" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="37" minY="0.0" maxX="91" maxY="16"/>
+                                <state key="normal" title="Decrypt" image="decrypt.png">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="wlJ-dd-0fv" secondAttribute="centerX" id="iyq-kB-gTg"/>
+                            <constraint firstAttribute="centerY" secondItem="wlJ-dd-0fv" secondAttribute="centerY" id="yw5-pH-iF6"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="o3a-rC-U7P" firstAttribute="width" secondItem="6gG-PQ-BRK" secondAttribute="width" id="6Mp-Zg-TPR"/>
+                    <constraint firstItem="o3a-rC-U7P" firstAttribute="top" secondItem="wUX-dq-KQq" secondAttribute="topMargin" constant="-8" id="VW5-vf-5N7"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="o3a-rC-U7P" secondAttribute="trailing" constant="-9" id="a6U-tn-v1F"/>
+                    <constraint firstItem="o3a-rC-U7P" firstAttribute="leading" secondItem="6gG-PQ-BRK" secondAttribute="trailing" constant="1" id="c67-26-vp2"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="6gG-PQ-BRK" secondAttribute="bottom" constant="-8" id="eve-fB-IJp"/>
+                    <constraint firstItem="6gG-PQ-BRK" firstAttribute="top" secondItem="wUX-dq-KQq" secondAttribute="topMargin" constant="-8" id="hDx-hW-1a6"/>
+                    <constraint firstItem="6gG-PQ-BRK" firstAttribute="leading" secondItem="wUX-dq-KQq" secondAttribute="leadingMargin" constant="-8" id="jUz-hK-MMR"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="o3a-rC-U7P" secondAttribute="bottom" constant="-8" id="nND-jW-pnX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="decryptBtn" destination="wlJ-dd-0fv" id="akL-Bz-13u"/>
+                <outlet property="encryptBtn" destination="vYV-hf-N3o" id="fga-iu-Knj"/>
+            </connections>
+            <point key="canvasLocation" x="260" y="252"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="decrypt.png" width="128" height="128"/>
+        <image name="encrypt.png" width="128" height="128"/>
+    </resources>
+</document>

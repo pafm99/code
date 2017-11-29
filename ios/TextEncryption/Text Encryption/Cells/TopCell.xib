@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TopCell" id="cbE-f1-gkS" customClass="TopCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cbE-f1-gkS" id="wUX-dq-KQq">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gaO-vH-Z6Z" userLabel="left">
+                        <rect key="frame" x="0.0" y="26" width="107" height="44"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="k5n-Rb-A6T" userLabel="copy">
+                                <rect key="frame" x="0.0" y="0.0" width="106" height="44"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="106" id="668-qP-IWV"/>
+                                    <constraint firstAttribute="height" constant="44" id="sc2-f4-Txw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="titleEdgeInsets" minX="-100" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="6" minY="6" maxX="69" maxY="6"/>
+                                <state key="normal" title="Copy as link" image="copy.png">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="k5n-Rb-A6T" secondAttribute="centerX" constant="0.5" id="Qui-DA-Jg8"/>
+                            <constraint firstAttribute="centerY" secondItem="k5n-Rb-A6T" secondAttribute="centerY" id="YXq-os-zD6"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tsV-zv-zXV" userLabel="right">
+                        <rect key="frame" x="213" y="26" width="107" height="44"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="aOf-OQ-3nU">
+                                <rect key="frame" x="0.0" y="0.0" width="106" height="44"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="106" id="GRc-SW-RsX"/>
+                                    <constraint firstAttribute="height" constant="44" id="fZO-Tw-51a"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="titleEdgeInsets" minX="-105" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="8" minY="10" maxX="73" maxY="10"/>
+                                <state key="normal" title="Clear" image="bin9-2.png">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="aOf-OQ-3nU" secondAttribute="centerY" id="QDg-9y-ELE"/>
+                            <constraint firstAttribute="centerX" secondItem="aOf-OQ-3nU" secondAttribute="centerX" constant="0.5" id="SI1-Ox-ySk"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="hCp-dB-drH" userLabel="Send">
+                        <rect key="frame" x="107" y="26" width="106" height="44"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="OZf-Iq-bvw"/>
+                            <constraint firstAttribute="width" constant="106" id="W6c-KZ-pNA"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                        <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <inset key="titleEdgeInsets" minX="-99" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <inset key="imageEdgeInsets" minX="16" minY="8" maxX="62" maxY="8"/>
+                        <state key="normal" title="Send" image="envelope54.png">
+                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="tsV-zv-zXV" secondAttribute="trailing" constant="-8" id="1td-ZZ-ek5"/>
+                    <constraint firstItem="hCp-dB-drH" firstAttribute="leading" secondItem="gaO-vH-Z6Z" secondAttribute="trailing" id="4U2-WR-Zfn"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="tsV-zv-zXV" secondAttribute="bottom" constant="-9" id="A2C-6E-PMP"/>
+                    <constraint firstItem="hCp-dB-drH" firstAttribute="height" secondItem="gaO-vH-Z6Z" secondAttribute="height" id="I4e-od-EvC"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="gaO-vH-Z6Z" secondAttribute="bottom" constant="-9" id="NhC-MM-74D"/>
+                    <constraint firstItem="gaO-vH-Z6Z" firstAttribute="leading" secondItem="wUX-dq-KQq" secondAttribute="leadingMargin" constant="-8" id="Si5-M7-LzL"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="hCp-dB-drH" secondAttribute="bottom" constant="-9" id="UQp-vQ-Blv"/>
+                    <constraint firstItem="hCp-dB-drH" firstAttribute="height" secondItem="tsV-zv-zXV" secondAttribute="height" id="oDM-An-DcY"/>
+                    <constraint firstItem="tsV-zv-zXV" firstAttribute="leading" secondItem="hCp-dB-drH" secondAttribute="trailing" id="vvV-AX-JWo"/>
+                    <constraint firstAttribute="centerX" secondItem="hCp-dB-drH" secondAttribute="centerX" id="wjd-Y0-Zcu"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="clearBtn" destination="aOf-OQ-3nU" id="hJ7-4Y-3CA"/>
+                <outlet property="cpyBtn" destination="k5n-Rb-A6T" id="WEl-eZ-i6x"/>
+                <outlet property="sendBtn" destination="hCp-dB-drH" id="xHt-2V-2GH"/>
+            </connections>
+            <point key="canvasLocation" x="260" y="252"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bin9-2.png" width="128" height="128"/>
+        <image name="copy.png" width="128" height="128"/>
+        <image name="envelope54.png" width="128" height="128"/>
+    </resources>
+</document>

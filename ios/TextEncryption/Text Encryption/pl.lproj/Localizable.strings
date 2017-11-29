@@ -1,0 +1,23 @@
+/* 
+  File.strings
+  Text Encryption
+
+  Created by Grzegorz Wójcik on 25.05.2015.
+  Copyright (c) 2015 Grzegorz Wójcik. All rights reserved.
+*/
+"Copy\nas link" = "Kopiuj\njako link";
+"Clear" = "Wyczyść";
+"Copied" = "Skopiowano";
+"Copied to clipboard." = "Skopiowano do schowka.";
+"Are you sure?" = "Jesteś pewien?";
+"Cancel" = "Anuluj";
+"Enter here text for encryption/decryption..." = "Wprowadź tu tekst do zaszyfrowania/deszyfrowania...";
+"Enter here password..." = "Wprowadź tutaj hasło...";
+"Send" = "Wyślij";
+"You can send encrypted text with:" = "Możesz wysłać zaszyfrowany tekst poprzez:";
+"Encrypt" = "Szyfruj";
+"Decrypt" = "Deszyfruj";
+"Password field is empty" = "Brak hasła";
+"Please enter password." = "Proszę podać hasło.";
+"No results" = "Brak wyniku";
+"Check if your password is correct." = "Upewnij się że hasło jest poprawne.";
