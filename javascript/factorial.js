@@ -1,6 +1,6 @@
 function factorial(num){
     // A recursive function will continue to call itself until the base case is satisfied
-    if (num === 1){
+    if (num <= 2){
       return num;
     }
     else{
