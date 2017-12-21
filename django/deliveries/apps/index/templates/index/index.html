@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+</head>
+<body>
+    <main>
+        <div>
+            <header>
+
+            </header>
+            <div>
+                <form action="/process" method="post">
+                    {% csrf_token %}
+                    Date: <input type="date" name="date"/><br>
+                    Route: <input tyoe="text" name="route"/><br>
+                    Stops: <input type="text" name="stops"/><br>
+                    Miles: <input type="text" name="miles"/><br>
+                    Pieces: <input type="text" name="pieces"/><br>
+                    Sales: <input type="text" name="sales"/><br>
+                    Revenue: <input type="text" name="revenue"/><br>
+                    Contract Revenue: <input type="text" name="contract_revenue"/><br>
+                    Hours of Operation: <input type="text" name="hours_of_operation"/><br>
+                    Driver: Name: <input type="text" name="driver_name"/><br>
+                    Contract Carrier: <input type="text" name="contractor"/><br>
+                    <input type="submit" value="Submit"/>
+                </form>
+            </div>
+        </div>
+    </main>
+    
+</body>
+</html>
