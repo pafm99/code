@@ -1,0 +1,4 @@
+/Users/paulfranco/Desktop/blackjack/bin/Debug/netcoreapp1.1/blackjack.deps.json
+/Users/paulfranco/Desktop/blackjack/bin/Debug/netcoreapp1.1/blackjack.runtimeconfig.json
+/Users/paulfranco/Desktop/blackjack/bin/Debug/netcoreapp1.1/blackjack.runtimeconfig.dev.json
+/Users/paulfranco/Desktop/blackjack/obj/Debug/netcoreapp1.1/blackjack.AssemblyInfo.cs
