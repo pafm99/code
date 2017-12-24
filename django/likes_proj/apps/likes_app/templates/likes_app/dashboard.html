@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    {{curr_user.first_name}}
+
+    {{curr_user.received.all.count}}
+    <h1>test</h1>
+    {%for user in otherusers%}
+    <p>{{user}} <a href="/like/give/{{user.id}}">Give</a> | count: {{user.received.all.count}}</p>
+    {%endfor%}
+</body>
+</html>
