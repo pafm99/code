@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div>
+        {%if messages%}
+            {%for message in messages%}
+                <p>{{message}}</p>
+            {%endfor%}
+        {%endif%}
+        <div>
+            <h1>HIGH FIVES YAY!</h1>
+            <div>
+                <h3>{{curr_user.first_name}} {{curr_user.last_name}}</h3>
+                <p>You have been given <b>{{curr_user.receiver.count}}</b> High Fives</p>
+                
+            </div>
+            <div>
+                <h3>Other Users</h3>
+                {%for user in other_users%}
+                    <p>{{user.first_name}} {{user.last_name}} | <a href="/high/give/{{user.id}}">Give a High Five</a></p>
+                {%endfor%}
+
+            </div>
+        </div>
+
+
+    </div>
+    
+
+</body>
+</html>
