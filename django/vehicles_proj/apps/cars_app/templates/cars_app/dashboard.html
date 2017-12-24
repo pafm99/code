@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h3> Welcome to Car Dashboard</h3>
+
+        <p>Welcome {{user}}</p>
+    </div>
+    <div>
+       <form action="/dashboard/add" method="post">
+            {% csrf_token %}
+            <input type="text" name="make" placeholder="Whats the make of your car?"><br>
+            <input type="text" name="model" placeholder="Whats the model?"><br>
+            <input type="text" name="year" placeholder="Whats the year"><br>
+            <input type="submit" value="Enter">
+       </form>
+    </div>
+</body>
+</html>
