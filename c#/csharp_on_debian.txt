@@ -1,0 +1,21 @@
+Installing C# on Debian
+
+apt install mono-mcs
+and optionally
+
+apt install monodevelop
+if you want something more like an IDE.
+
+mcs is the compiler. You can run the compiled program with mono prog.exe (or as ./prog.exe with binfmt_misc support enabled, which I believe Debian will do by default).
+
+Is there something like a prompt where I can try running snippets of code?
+apt install mono-csharp-shell
+and then
+
+$ csharp
+Mono C# Shell, type "help;" for help
+
+Enter statements below.
+csharp> Console.WriteLine("Hello world!")
+Hello world!
+csharp>
