@@ -7,10 +7,20 @@ class Block {
     this.timestamp = timestamp;
     this.data = data;
     this.hash = this.calculateHash();
+    this.nonce = 0;
   }
 
   calculateHash() {
-      return SHA256(this.index + this.previousHash + this.timestamp + JSON.stringify(this.data)).toString();
+      return SHA256(this.index + this.previousHash + this.timestamp + JSON.stringify(this.data) + this.nonce).toString();
+  }
+
+  mineBlock(difficulty) {
+    while (this.hash.substring(0, difficulty) !== Array(difficulty + 1).join("0")) {
+        this.nonce++;
+        this.hash = this.calculateHash();
+    }
+
+    console.log("BLOCK MINED: " + this.hash);
   }
 }
 
@@ -18,10 +28,11 @@ class Block {
 class Blockchain{
     constructor() {
         this.chain = [this.createGenesisBlock()];
+        this.difficulty = 5;
     }
 
     createGenesisBlock() {
-        return new Block(0, "01/01/2018", "Genesis block", "0");
+        return new Block(0, "01/01/2017", "Genesis block", "0");
     }
 
     getLatestBlock() {
@@ -30,7 +41,7 @@ class Blockchain{
 
     addBlock(newBlock) {
         newBlock.previousHash = this.getLatestBlock().hash;
-        newBlock.hash = newBlock.calculateHash();
+        newBlock.mineBlock(this.difficulty);
         this.chain.push(newBlock);
     }
 
@@ -53,16 +64,21 @@ class Blockchain{
 }
 
 let francoCoin = new Blockchain();
-francoCoin.addBlock(new Block(1, "02/01/2018", { amount: 4 }));
-francoCoin.addBlock(new Block(2, "02/01/2018", { amount: 8 }));
+console.log('Mining block 1...');
+francoCoin.addBlock(new Block(1, "20/07/2017", { amount: 4 }));
+
+console.log('Mining block 2...');
+francoCoin.addBlock(new Block(2, "20/07/2017", { amount: 8 }));
 
 
-console.log('Blockchain valid? ' + francoCoin.isChainValid());
+// console.log('Blockchain valid? ' + francoCoin.isChainValid());
 
-console.log('Changing a block...');
-//francoCoin.chain[1].data = { amount: 100 }; //attempting to tamper with one of the blocks
-// francoCoin.chain[1].hash = francoCoin.chain[1].calculateHash(); //attempting to tamper by re-calculating the hash
+// Attempt to tamper with block
+// console.log('Changing a block...');
+// francoCoin.chain[1].data = { amount: 100 };
+// francoCoin.chain[1].hash = francoCoin.chain[1].calculateHash();
 
+// Check is tampered block is valid
 // console.log("Blockchain valid? " + francoCoin.isChainValid());
 
-console.log(JSON.stringify(francoCoin, null, 4));
+// console.log(JSON.stringify(francoCoin, null, 4));
