@@ -60,9 +60,9 @@ francoCoin.addBlock(new Block(2, "02/01/2018", { amount: 8 }));
 console.log('Blockchain valid? ' + francoCoin.isChainValid());
 
 console.log('Changing a block...');
-francoCoin.chain[1].data = { amount: 100 };
-// francoCoin.chain[1].hash = francoCoin.chain[1].calculateHash();
+//francoCoin.chain[1].data = { amount: 100 }; //attempting to tamper with one of the blocks
+// francoCoin.chain[1].hash = francoCoin.chain[1].calculateHash(); //attempting to tamper by re-calculating the hash
 
-console.log("Blockchain valid? " + savjeeCoin.isChainValid());
+// console.log("Blockchain valid? " + francoCoin.isChainValid());
 
-// console.log(JSON.stringify(francoCoin, null, 4));
+console.log(JSON.stringify(francoCoin, null, 4));
