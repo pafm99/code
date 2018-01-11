@@ -18,10 +18,12 @@ def prediction(X, W, b):
 def perceptronStep(X, y, W, b, learn_rate = 0.01):
     for i in range(len(X)):
         y_hat = prediction(X[i],W,b)
+        # If the point is classified positive, but it has a negative label, subtract \alpha p, \alpha q, and \alpha from w_1, w_2, and b respectively.
         if y[i]-y_hat == 1:
             W[0] += X[i][0]*learn_rate
             W[1] += X[i][1]*learn_rate
             b += learn_rate
+        # If the point is classified negative, but it has a positive label, add \alpha p, \alpha q, and \alpha to w_1, w_2, and b respectively
         elif y[i]-y_hat == -1:
             W[0] -= X[i][0]*learn_rate
             W[1] -= X[i][1]*learn_rate
