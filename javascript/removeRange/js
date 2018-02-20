@@ -1,0 +1,15 @@
+// Array: Remove Range 
+// Given an array, and indices start and end, return a array that contains the value from start to end.
+// Example: Given [20, 30, 40, 50, 60, 70, 80, 90] change it to [40, 50, 60, 70]
+
+function removeRange(arr, start, end){
+  newArr = [];
+  for (let i = start; i <= end; i++){
+    newArr.push(arr[i]);
+  }
+  return newArr;
+}
+
+myArray = [20, 30, 40, 50, 60, 70, 80, 90]
+
+removeRange(myArray, 2, 5);
