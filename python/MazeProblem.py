@@ -8,7 +8,7 @@ class MazeProblem:
 	def solveMaze(self):
 	
 		if self.solve(0,0):
-			self.showResult();
+			self.showResult()
 		else:
 			print('No feasible solution has found...')					
 	
